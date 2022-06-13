@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Montserrat:ital,wght@1,300;1,400;1,700&family=Pacifico&display=swap');
+
+
+
+:root {
+    --primary-color: #232946 ;
+    --secondary-color : #EEBBC3 ;
+
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Fascinate', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+
+}
+
+input,label{
+    display: block;
+}
+
+input{
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #B8C1EC;
+    font-family: 'Fascinate', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: x-large;
+    border-color: #232946;
+    padding: 1rem;
+}
+
+#btn-click
+{
+    display: block;
+    margin-top: 5rem;
+    margin: auto;
+    width: 25%;
+    font-size: larger;
+    background: transparent;
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    border-width: medium;
+    padding: 0.5rem;
+    font-family: 'Fascinate', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+border-radius: 4rem;
+}
+
+#show-msg {
+    display: block;
+    text-align: center;
+    padding: 4rem;
+    font-size: x-large;
+}
+
+.txtdecor{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.social-link{
+    list-style:none ;
+  text-align: center;
+
+}
+
+
+.link{
+    display: inline;
+    padding: 1rem;
+    
+    
+    
+    
+}
+
+footer{
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.txtdecor:hover{
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+

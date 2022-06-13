@@ -5,9 +5,9 @@ const showMsg = document.querySelector("#show-msg")
 
 function compareValue(sum,luckyNum){
     if(sum%luckyNum==0){
-        showMsg.value="your birthday is lucky";
+        showMsg.innerText="your birthday is lucky 😍";
     }else{
-        showMsg.value="your birthday is not lucky";
+        showMsg.innerText="your birthday is not lucky 😔";
     }
 }
     
@@ -15,11 +15,15 @@ function compareValue(sum,luckyNum){
 function checkBirthDateIsLucky(){
     const dob = dateInput.value;
     const sum = calculateSum(dob);
+    if(sum&&dob){
    compareValue(sum,luckyNum.value)
+     } else{
+   showMsg.innerText="please enter both the fields 😠";
+     }
 }
 
 function calculateSum(dob){
-    dob = dob.replaceAll("-","")
+    dob = dob.replaceAll("-", "")
     let sum = 0
     for(let index=0;index<dob.length;index++){
         sum = sum + Number(dob.charAt(index));
